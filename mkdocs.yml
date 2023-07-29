@@ -1,0 +1,94 @@
+site_name: CrackleCradle Wiki
+
+repo_name: sheep-realms/CrackleCradle-Wiki-zh
+repo_url: https://github.com/sheep-realms/CrackleCradle-Wiki-zh
+edit_uri: ""
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      primary: red
+      accent: red
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+    - media: "(prefers-color-scheme: light)"
+      primary: red
+      accent: red
+      scheme: default
+      toggle:
+        icon: material//weather-sunny
+        name: 切换到深色模式
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    # - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  # - pymdownx.tabbed:
+  #   alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - style/common.css
+
+copyright: CC BY-NC-SA 4.0
+extra:
+  # alternate:
+  #   - name: 中文（简体）
+  #     link: /zh/
+  #     lang: zh
+  #   - name: 日本語
+  #     link: /ja/
+  #     lang: ja
+  #   - name: English
+  #     link: /en/
+  #     lang: en
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/sheep-realms
+
+nav:
+- 首页:
+  - index.md
+  - main/staff.md
+  - main/bgm.md
+- 模组:
+  - mod/SlackOfDescent.md
