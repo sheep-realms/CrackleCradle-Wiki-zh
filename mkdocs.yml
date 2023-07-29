@@ -2,7 +2,7 @@ site_name: CrackleCradle Wiki
 
 repo_name: sheep-realms/CrackleCradle-Wiki-zh
 repo_url: https://github.com/sheep-realms/CrackleCradle-Wiki-zh
-edit_uri: ""
+edit_uri: edit/master/docs/
 
 theme:
   name: material
@@ -26,6 +26,8 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - content.action.view
+    - content.action.edit
     # - header.autohide
     # - navigation.expand
     # - navigation.indexes
